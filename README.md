@@ -1,10 +1,14 @@
-# Linear Regression: Noise, Outliers and Overfitting
+# From Data to Predictions: Understanding Linear Regression, Noise, Outliers, and Overfitting
 
 ## About the Project
 
 This project is part of my work in mathematics and data analysis. I wanted to understand how linear regression works and what happens when the data changes or the model becomes more complex.
 
 I used Python to calculate regression lines, make predictions, visualize the results and measure prediction errors.
+
+## Research Question
+
+How do noise, outliers, and model complexity affect the accuracy and reliability of regression models?
 
 ## What I Worked On
 
@@ -40,6 +44,15 @@ I changed one value in a copy of the original dataset to create an outlier. I th
 ### 4. Polynomial Models
 
 I fitted polynomial models of degrees 1, 2 and 4 to the same dataset. The higher-degree model followed the observed points more closely, which helped me understand why a more complex model is not always the best choice.
+
+## Selected Results
+
+- The baseline line for the five observations is $\\hat{y} = 0.6x + 2.6$, with training MAE = 0.48 and RMSE ≈ 0.566.
+- In the fixed-seed noise experiments, the fitted slopes were 0.473 at standard deviation 0.5 and 0.220 at standard deviation 1.5. These are individual simulated outcomes, not general estimates of how noise always changes a slope.
+- Changing the final output value from 6 to 15 changed the fitted slope from 0.6 to 2.4.
+- The degree-4 polynomial passes through all five observations, illustrating a perfect training fit on this small dataset.
+
+The metrics above describe fit to the datasets used to fit each model, except for the noise reference-grid comparison in the notebook. That comparison measures deviation from the baseline trend, which is generated from the original five-point fit; it is not independent real-world test data.
 
 ## What I Learned
 
