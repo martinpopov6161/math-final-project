@@ -68,10 +68,10 @@ The dataset contains only five observations, so the experiments are mainly usefu
 
 ## How to Run
 
-Install the required libraries:
+From the repository folder, install the required libraries:
 
 ```bash
-pip install numpy pandas matplotlib jupyter
+pip install -r requirements.txt
 ```
 
 Open `notebooks/linear_regression_analysis.ipynb` in Jupyter Notebook or VS Code and run the cells in order.
@@ -81,6 +81,7 @@ Open `notebooks/linear_regression_analysis.ipynb` in Jupyter Notebook or VS Code
 ```text
 math-final-project/
 ├── README.md
+├── requirements.txt
 └── notebooks/
     └── linear_regression_analysis.ipynb
 ```
